@@ -1,0 +1,107 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+
+	<div class="container-sm">
+		<div class="header" style="text-align:center; margin-top: 2em;">
+			<div>
+				<br>
+				<h4>
+					<b>WNIOSEK ON-LINE</b>
+				</h4>
+				<h5>
+					o ujęcie zadania w budżecie partycypacyjnym miasta Łęczna na rok 2022
+				</h5>
+			</div>
+		</div>
+		<div class="offset-sm-3 col-6" style="margin-top:2em">
+			<form action="">
+				<div class="mb-3">
+					<label for="nazwa-zadania" class="form-label">
+						<b>1. Nazwa zadania</b>
+					</label>
+					<input type="text" name="nazwa-zadania" class="form-control" id="nazwa-zadania" aria-describedby="nazwa-zadania-help" required>
+					<div id="nazwa-zadania-help" class="form-text">Wpisz krótką nazwę zadania.</div>
+				</div>
+
+				<p>
+					<b>2. Osiedle, którego dotyczy zadanie</b>
+				</p>
+				<div class="form-check">
+					<input class="form-check-input" type="radio" name="osiedle" value="bobrowniki" id="flexRadioDefault1" required>
+					<label class="form-check-label" for="flexRadioDefault1">
+						Bobrowniki
+					</label>
+				</div>
+				<div class="form-check">
+					<input class="form-check-input" type="radio" name="osiedle" value="niepodleglosci" id="flexRadioDefault2">
+					<label class="form-check-label" for="flexRadioDefault2">
+						Niepodległości
+					</label>
+				</div>
+				<div class="form-check">
+					<input class="form-check-input" type="radio" name="osiedle" value="samsonowicza" id="flexRadioDefault3">
+					<label class="form-check-label" for="flexRadioDefault3">
+						Samsonowicza
+					</label>
+				</div>
+
+				<div class="form-check">
+					<input class="form-check-input" type="radio" name="osiedle" value="staremiasto" id="flexRadioDefault4">
+					<label class="form-check-label" for="flexRadioDefault4">
+						Stare Miasto
+					</label>
+				</div>
+
+				<div class="form-check">
+					<input class="form-check-input" type="radio" name="osiedle" value="sloneczne" id="flexRadioDefault5">
+					<label class="form-check-label" for="flexRadioDefault5">
+						Słoneczne
+					</label>
+				</div>
+				<div class="form-check">
+					<input class="form-check-input" type="radio" name="osiedle" value="trebaczow" id="flexRadioDefault6">
+					<label class="form-check-label" for="flexRadioDefault6">
+						Osiedle Kolonia Trębaczów
+					</label>
+				</div>
+				<br>
+				<div class="mb-3">
+					<label for="nazwa-zadania" class="form-label">
+						<b>3. Numery działek</b>
+					</label>
+					<input type="text" name="nazwa-zadania" class="form-control" id="nazwa-zadania" aria-describedby="nazwa-zadania-help" required>
+					<div id="nazwa-zadania-help" class="form-text">Numery działek, na których ma być realizowane zadanie. Można sprawdzić w trybie publicznym na stronie
+						<a href="http://leczna.geoportal2.pl" target="_blank">http://leczna.geoportal2.pl</a>
+					</div>
+
+					<br>
+					<div class="mb-3">
+						<label for="opis-projektu" class="form-label">
+							<b>4. Opis zadania</b>
+						</label>
+						<textarea class="form-control" id="opis-projektu" rows="3"></textarea>
+						<div id="nazwa-zadania-help" class="form-text">Wpisz opis zadania.</div>
+
+
+					</div>
+
+					<br>
+					<div class="mb-3">
+						<label for="uzasadnienie" class="form-label">
+							<b>5. Uzasadnienie</b>
+						</label>
+						<textarea class="form-control" id="uzasadnienie" rows="3"></textarea>
+						<div id="uzasadnienie-help" class="form-text">Prosimy o wskazanie, dlaczego zadanie powinno zostać zrealizowane, jakiego problemu dotyczy,  jaki cel ma zostać osiągnięty dzięki realizacji projektu i w jaki sposób jego realizacja wpłynie na życie mieszkańców osiedla i gminy Łęczna. Uzasadnienie powinno przekonać o konieczności realizacji zadania.
+
+						</div>
+
+					</div>
+
+
+				</div>
+
+			</form>
+		</div>
+	</div>
+{% endblock %}
